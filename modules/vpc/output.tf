@@ -5,7 +5,7 @@ output "public_subnet" {
   value = aws_subnet.public.id
 }
 output "private_subnet" {
-  value = aws_subnet.private.id      
+  value = aws_subnet.private.id    
 }
 output "alb_security_group_id" {
   value = aws_security_group.alb.id
