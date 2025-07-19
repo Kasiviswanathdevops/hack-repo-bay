@@ -10,7 +10,7 @@ resource "aws_lb" "main" {
 
   tags = {
     Name        = "${var.project_name}-${var.environment}-alb"
-   
+    Environment = var.environment
   }
 }
 
@@ -37,7 +37,7 @@ resource "aws_lb_target_group" "patient_service" {
   tags = {
     Name        = "${var.project_name}-${var.environment}-patient-tg"
     Service     = "patient-service"
-  
+    Environment = var.environment
   }
 }
 
@@ -64,7 +64,7 @@ resource "aws_lb_target_group" "appointment_service" {
   tags = {
     Name        = "${var.project_name}-${var.environment}-appointment-tg"
     Service     = "appointment-service"
-    
+    Environment = var.environment
   }
 }
 
@@ -86,7 +86,7 @@ resource "aws_lb_listener" "main" {
 
   tags = {
     Name        = "${var.project_name}-${var.environment}-alb-listener"
-   
+    Environment = var.environment
   }
 }
 
@@ -109,7 +109,7 @@ resource "aws_lb_listener_rule" "patient_service" {
   tags = {
     Name        = "${var.project_name}-${var.environment}-patient-rule"
     Service     = "patient-service"
-  
+    Environment = var.environment
   }
 }
 
@@ -132,6 +132,7 @@ resource "aws_lb_listener_rule" "appointment_service" {
   tags = {
     Name        = "${var.project_name}-${var.environment}-appointment-rule"
     Service     = "appointment-service"
+    Environment = var.environment
   }
 }
 
@@ -158,7 +159,6 @@ resource "aws_lb_listener_rule" "health_check" {
 
   tags = {
     Name        = "${var.project_name}-${var.environment}-health-rule"
-    
+    Environment = var.environment
   }
 }
-

@@ -1,11 +1,12 @@
-name: build image
+name: Build and Deploy Microservices
+
 on:
   push:
     branches: [main]
-    paths: ['app/**']
+    paths: ['microservices/**']
   pull_request:
     branches: [main]
-    paths: ['app/**']
+    paths: ['microservices/**']
   workflow_dispatch:
 
 

@@ -25,10 +25,10 @@ module "alb" {
   source = "./modules/alb"
   
   project_name    = var.project_name
+  environment     = var.environment
   vpc_id          = module.vpc.vpc_id
   public_subnets  = module.vpc.public_subnets
   security_groups = [module.vpc.alb_security_group_id]
-  environment  = var.environment
 }
 
 module "ecs" {
@@ -48,13 +48,5 @@ module "ecs" {
   container_memory        = var.container_memory
   app_port               = var.app_port
   desired_capacity       = var.desired_capacity
-}
-
-module "cloudwatch" {
-  source = "./modules/cloudwatch"
-  
-  project_name    = var.project_name
-  environment     = var.environment
-  ecs_cluster_name = module.ecs.cluster_name
 }
 

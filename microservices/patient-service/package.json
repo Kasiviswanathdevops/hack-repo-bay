@@ -1,7 +1,7 @@
 {
-  "name": "appointment-service",
+  "name": "patient-service",
   "version": "1.0.0",
-  "description": "Express-based appointment service",
+  "description": "Express-based patient service",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

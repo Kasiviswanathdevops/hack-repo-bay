@@ -184,3 +184,4 @@ resource "aws_security_group" "ecs_tasks" {
     create_before_destroy = true
   }
 }
+

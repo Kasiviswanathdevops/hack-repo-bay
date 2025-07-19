@@ -225,4 +225,3 @@ resource "aws_ecs_service" "appointment_service" {
 
 # Data source for current AWS region
 data "aws_region" "current" {}
-

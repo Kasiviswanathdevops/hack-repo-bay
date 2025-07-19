@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:18
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
@@ -16,5 +16,4 @@ COPY . .
 EXPOSE 3000
 
 # Define the command to run your app
-CMD ["node", "patient-server.js"]
-
+CMD ["node", "server.js"]

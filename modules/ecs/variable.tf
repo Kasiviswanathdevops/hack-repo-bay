@@ -74,4 +74,3 @@ variable "desired_capacity" {
   type        = number
   default     = 1
 }
-
