@@ -1,13 +1,7 @@
 variable "aws_region" {
   description = "AWS region"
   type        = string
-  default     = "us-east-1"
-}
-
-variable "environment" {
-  description = "Environment name"
-  type        = string
-  default     = "dev"
+  default     = "us-west-1"
 }
 
 variable "project_name" {
@@ -25,7 +19,7 @@ variable "vpc_cidr" {
 variable "availability_zones" {
   description = "List of availability zones"
   type        = list(string)
-  default     = ["us-east-1a", "us-east-1b"]
+  default     = ["us-west-1a", "us-west-1b"]
 }
 
 variable "container_cpu" {
@@ -52,3 +46,7 @@ variable "desired_capacity" {
   default     = 1
 }
 
+variable "environment" {
+  description = "The environment name"
+  type        = string
+}
