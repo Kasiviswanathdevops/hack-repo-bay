@@ -1,25 +1,25 @@
-variable "project_namee" {
+variable "project_name" {
   description = "Name of the project"
   type        = string
 }
 
-variable "environmentt" {
+variable "environment" {
   description = "Environment name"
   type        = string
   default =     "QA"
 }
 
-variable "vpc_idd" {
+variable "vpc_id" {
   description = "ID of the VPC"
   type        = string
 }
 
-variable "public_subnet" {
+variable "public_subnets" {
   description = "List of public subnet IDs"
   type        = list(string)
 }
 
-variable "security_groupss" {
+variable "security_groups" {
   description = "List of security group IDs for ALB"
   type        = list(string)
 }
