@@ -7,19 +7,19 @@ variable "aws_region" {
 variable "environment" {
   description = "Environment name"
   type        = string
-  default     = "dev"
+  default     = "dev-01"
 }
 
 variable "project_name" {
   description = "Project name"
   type        = string
-  default     = "healthcare-app"
+  default     = "appointment"
 }
 
 variable "vpc_cidr" {
   description = "CIDR block for VPC"
   type        = string
-  default     = "141.0.0.0/16"
+  default     = "121.0.0.0/16"
 }
 
 variable "availability_zones" {
