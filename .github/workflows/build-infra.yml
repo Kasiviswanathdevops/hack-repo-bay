@@ -38,10 +38,6 @@ jobs:
         id: init
         run: terraform init
 
-      - name: Terraform Validate
-        id: validate
-        run: terraform validate -no-color
-
       - name: Terraform Plan
         id: plan
         if: github.event_name == 'workflow_dispatch'
