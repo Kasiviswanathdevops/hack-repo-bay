@@ -1,4 +1,4 @@
-name: Terraform infra CI/CD
+name: infra build
 
 on:
   workflow_dispatch:
