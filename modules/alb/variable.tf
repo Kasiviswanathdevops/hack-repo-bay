@@ -19,3 +19,8 @@ variable "security_groups" {
   description = "List of security group IDs for ALB"
   type        = list(string)
 }
+
+variable "environment" {
+  description = "The environment name"
+  type        = string
+}
