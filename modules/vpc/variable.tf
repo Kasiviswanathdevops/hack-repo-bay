@@ -1,15 +1,19 @@
-
-variable "cidr_block" {
-  type = string
-  default = 10.0.0.0/16
+variable "project_name" {
+  description = "Name of the project"
+  type        = string
 }
 
-variable "pub_cidr" {
-  type = string
-  default = 10.0.1.0/24
+variable "environment" {
+  description = "Environment name"
+  type        = string
 }
 
-variable "pri_cidr" {
-  type = string
-  default = 10.0.2.0/24
+variable "vpc_cidr" {
+  description = "CIDR block for VPC"
+  type        = string
+}
+
+variable "availability_zones" {
+  description = "List of availability zones"
+  type        = list(string)
 }
