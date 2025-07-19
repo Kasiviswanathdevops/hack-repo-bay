@@ -1,6 +1,6 @@
 output "ecs_task_execution_role_arn" {
-  value = aws_iam_role.ecs_task_execution.arn
+  value = aws_iam_role.ecs_task_execution_role
 }
 output "ecs_task_role_arn" {
-  value = aws_iam_role.ecs_task.arn
+  value = aws_iam_role.ecs_task_role
 }
