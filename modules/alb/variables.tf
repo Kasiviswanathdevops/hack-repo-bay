@@ -1,8 +1,11 @@
-
 variable "project_name" {
   description = "Name of the project"
   type        = string
-  default = "appointment-fargate"
+}
+
+variable "environment" {
+  description = "Environment name"
+  type        = string
 }
 
 variable "vpc_id" {
@@ -18,9 +21,4 @@ variable "public_subnets" {
 variable "security_groups" {
   description = "List of security group IDs for ALB"
   type        = list(string)
-}
-
-variable "environment" {
-  description = "The environment name"
-  type        = string
 }
