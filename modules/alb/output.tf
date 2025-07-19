@@ -6,6 +6,7 @@ variable "project_name" {
 variable "environment" {
   description = "Environment name"
   type        = string
+  default = 
 }
 
 variable "vpc_id" {
