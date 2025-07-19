@@ -19,7 +19,7 @@ variable "project_name" {
 variable "vpc_cidr" {
   description = "CIDR block for VPC"
   type        = string
-  default     = "151.0.0.0/16"
+  default     = "125.0.0.0/16"
 }
 
 variable "availability_zones" {
