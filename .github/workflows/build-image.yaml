@@ -2,10 +2,10 @@ name: build image
 on:
   push:
     branches: [main]
-    paths: ['microservices/**']
+    paths: ['app/**']
   pull_request:
     branches: [main]
-    paths: ['microservices/**']
+    paths: ['app/**']
   workflow_dispatch:
 
 
